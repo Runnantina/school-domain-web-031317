@@ -33,7 +33,7 @@ class School
     # after sorted array, iterate back to hash
     # set array to values
       # this will iterate over each key, value pair
-    end
+  end
 
 
 
