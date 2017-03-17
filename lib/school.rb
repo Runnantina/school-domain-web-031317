@@ -14,21 +14,19 @@ class School
 
 
   def add_student(student, grade)
-    if !@roster[grade]
-      @roster[grade] = []
-    end
-    @roster[grade] << student
+    roster[grade] || roster[grade] =[]
+
+    roster[grade] << student
 
   end
 
   def grade(grade)
-    @roster[grade]
+    roster[grade]
   end
 
   def sort
-    @roster.each do |k,array|
-      @roster[k]=array.sort
-      @roster
+    roster.each do |k,array|
+      roster[k]=array.sort!
     end
     # after sorted array, iterate back to hash
     # set array to values
